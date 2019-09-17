@@ -8,6 +8,10 @@
     <title>IC ĐÂY RỒI - THẾ GIỚI LINH KIỆN ĐIỆN TỬ</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
 </head>
 
 <body>
@@ -29,7 +33,7 @@
         <div class="search-box">
             <p>Arduino, module, nguồn, cảm biến, ic...</p>
             <div class="search-area">
-                <input class="search" />
+                <input class="search" placeholder="Nhập từ khóa cần tìm" autocomplete="off"/>
                 <div class="search-button">Tìm kiếm</div>
             </div>
         </div>
@@ -58,7 +62,7 @@
                 </ul>
                 <div class="hot-line">Hotline: 0909 150 009</div>
             </div>
-            
+
         </div>
     </div>
 
@@ -221,7 +225,7 @@
                         </div>
                         <i class="fa fa-angle-down  " aria-hidden="true"></i>
                     </li>
-                    <li>
+                    <li id="last-el-menu">
                         <div class="el-menu">
                             <i class="fa fa-caret-right" aria-hidden="true"></i>
                             dụng cụ làm mạch
@@ -229,8 +233,68 @@
                         <i class="fa fa-angle-down  " aria-hidden="true"></i>
                     </li>
                 </ul>
+                <div class="header-container">
+                    <div id='menu-header'>
+                        <div class="el-menu-header">
+                            <p>hỗ trợ trực tuyến</p>
+                        </div>
+                    </div>
+                    <div id="cover-menu-header"></div>
+                </div>
+                <div class="online-support-container">
+                    <div class="online-support-info">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div>
+                            <p class="sup-field">Tư vấn bán hàng</p>
+                            <p>Mrs. Nhung: <span>038 559 3358</span></p>
+                        </div>
+                    </div>
+                    <div class="online-support-info">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div>
+                            <p class="sup-field">Tư vấn kỹ thuật</p>
+                            <p>Mr. Quang: <span>035 618 4078</span></p>
+                        </div>
+                    </div>
+                    <div class="online-support-info">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <div>
+                            <p class="sup-field">Email liên hệ</p>
+                            <p>tptdong97@gmail.com</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-container">
+                    <div id='menu-header'>
+                        <div class="el-menu-header">
+                            <p>tin tức</p>
+                        </div>
+                    </div>
+                    <div id="cover-menu-header"></div>
+                </div>
+                <div class="news">
+                    <img src="./assets/tintuc.jpeg" alt="">
+                    <a id="title-news" href="">Điện tử cơ bản: Các linh kiện điện tử cơ bản</a>
+                    <div class="poster-info">
+                        <div class="user">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Tạ Đông Đông
+                        </div>
+                        <div class="date">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            25/03/2017
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sit laboriosam recusandae
+                        consequuntur ut esse necessitatibus maiores quasi ullam, dolor dolores? Corrupti, quo beatae
+                        placeat vero adipisci labore commodi dolorem?
+                        <span><a href="">[Xem thêm]</a></span>
+                    </div>
+                </div>
             </div>
             <div class="product-col">
+                <!-- sản phẩm nổi bật -->
                 <div class="title-field">
                     <div class="text-container">
                         <div class="text-empty"></div>
@@ -239,7 +303,7 @@
                 </div>
                 <div class="product-field">
                     <div class="product">
-                        <img src="assets/arduino-mega2560-r3.jpg" alt="">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
                         <p class="product-name">Arduino MEGA2560 R3 Atmega16u2</p>
                         <p class="reduced-price">210.000₫</p>
                         <p class="original-price">250.000₫</p>
@@ -249,7 +313,87 @@
                         </div>
                     </div>
                     <div class="product">
-                        <img src="assets/arduino-mega2560-r3.jpg" alt="">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Arduino UNO R3 DIP (kèm cáp)</p>
+                        <p class="reduced-price">110.000₫</p>
+                        <p class="original-price">145.000₫</p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Arduino UNO R3 SMD (kèm cáp)</p>
+                        <p class="reduced-price">80.000₫</p>
+                        <p class="original-price"> </p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Arduino nano V3.0 ATmega328P</p>
+                        <p class="reduced-price">59.000₫</p>
+                        <p class="original-price">65.000₫</p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Arduino WeMos D1 R2 WiFi UNO</p>
+                        <p class="reduced-price">98.000₫</p>
+                        <p class="original-price">125.000₫</p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Module thu phát wifi ESP8266 12F</p>
+                        <p class="reduced-price">45.000₫</p>
+                        <p class="original-price">68.000₫</p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Mạch giảm áp DC LM2596 3A</p>
+                        <p class="reduced-price">15.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Mạch nguồn tăng áp DC XL6009</p>
+                        <p class="reduced-price">25.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Động cơ giảm tốc V1 + Bánh xe</p>
+                        <p class="reduced-price">18.000₫</p>
+                        <p class="original-price">35.000₫</p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
                         <p class="product-name">Arduino MEGA2560 R3 Atmega16u2</p>
                         <p class="reduced-price">210.000₫</p>
                         <p class="original-price">250.000₫</p>
@@ -259,7 +403,27 @@
                         </div>
                     </div>
                     <div class="product">
-                        <img src="assets/arduino-mega2560-r3.jpg" alt="">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Module thu phát RF SPI LORA RA-02 SX1278 433MHZ</p>
+                        <p class="reduced-price">149.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">FQPF12N80C</p>
+                        <p class="reduced-price">14.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
                         <p class="product-name">Arduino MEGA2560 R3 Atmega16u2</p>
                         <p class="reduced-price">210.000₫</p>
                         <p class="original-price">250.000₫</p>
@@ -269,34 +433,284 @@
                         </div>
                     </div>
                     <div class="product">
-                        <img src="assets/arduino-mega2560-r3.jpg" alt="">
-                        <p class="product-name">Arduino MEGA2560 R3 Atmega16u2</p>
-                        <p class="reduced-price">210.000₫</p>
-                        <p class="original-price">250.000₫</p>
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">IRF9540STRLPBF</p>
+                        <p class="reduced-price">10.000₫</p>
+                        <p class="original-price"></p>
                         <div class="buy-button">
                             <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                             <p>Mua ngay</p>
                         </div>
                     </div>
                     <div class="product">
-                        <img src="assets/arduino-mega2560-r3.jpg" alt="">
-                        <p class="product-name">Arduino MEGA2560 R3 Atmega16u2</p>
-                        <p class="reduced-price">210.000₫</p>
-                        <p class="original-price">250.000₫</p>
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Mạch 18650 battery shield V3</p>
+                        <p class="reduced-price">55.000₫</p>
+                        <p class="original-price"></p>
                         <div class="buy-button">
                             <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                             <p>Mua ngay</p>
                         </div>
                     </div>
                     <div class="product">
-                        <img src="assets/arduino-mega2560-r3.jpg" alt="">
-                        <p class="product-name">Arduino MEGA2560 R3 Atmega16u2</p>
-                        <p class="reduced-price">210.000₫</p>
-                        <p class="original-price">250.000₫</p>
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Điện trở 330 Ohm 1/4W 1% (gói 50 con)</p>
+                        <p class="reduced-price">3.000₫</p>
+                        <p class="original-price"></p>
                         <div class="buy-button">
                             <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
                             <p>Mua ngay</p>
                         </div>
+                    </div>
+                </div>
+                <div class="product-footer">
+                    <div class="btn-seemore">
+                        Xem tất cả
+                    </div>
+                </div>
+
+                <!-- Sản phẩm mới -->
+                <div class="title-field">
+                    <div class="text-container">
+                        <div class="text-empty"></div>
+                        <p>sản phẩm mới</p>
+                    </div>
+                </div>
+                <div class="product-field">
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Raspberry Pi 4 model B - 2GB RAM</p>
+                        <p class="reduced-price">1.590.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Led RG 5MM Anode chung</p>
+                        <p class="reduced-price">1.500₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Bột rửa mạch PCB 200G </p>
+                        <p class="reduced-price">28.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Chụp led 5MM</p>
+                        <p class="reduced-price">1.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Arduino ATTINY85 USB Digispark</p>
+                        <p class="reduced-price">45.000₫></p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Arduino screw shield V2</p>
+                        <p class="reduced-price">60.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Relay HK3FF-DC12V-SHG</p>
+                        <p class="reduced-price">7.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Cảm biến kim loại tiệm cận FOTEK PL-05N NPN</p>
+                        <p class="reduced-price">125.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Động cơ DC 370 3.7V</p>
+                        <p class="reduced-price">19.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">TPIC6B595DW</p>
+                        <p class="reduced-price">15.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Diode cầu GBJ1510 15A 1000V</p>
+                        <p class="reduced-price">8.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">MJE3055T</p>
+                        <p class="reduced-price">5.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Đồng hồ đo áp DC 5-120V</p>
+                        <p class="reduced-price">35.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Nhôm tản nhiệt sò nóng lạnh 60x180mm</p>
+                        <p class="reduced-price">90.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <div class="product-name">Diode SS56 SK56 SMA DO-214AC 5A 60V</div>
+                        <p class="reduced-price">900₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src='./assets/arduino-mega2560-r3.jpg' alt="" />
+                        <p class="product-name">Module ESP32-CAM WiFi + bluetooth Camera OV2640</p>
+                        <p class="reduced-price">190.000₫</p>
+                        <p class="original-price"></p>
+                        <div class="buy-button">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            <p>Mua ngay</p>
+                        </div>
+                    </div>
+                    <div class="product-footer">
+                        <div class="btn-seemore">
+                            Xem tất cả
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="shop-info">
+        <div class="info-container">
+            <div class="address">
+                <p id='p1'>HỘ KINH DOANH LINH KIỆN ĐIỆN TỬ IC ĐÂY RỒI</p>
+                <p>MST 0314342572 được cấp ngày 04/11/2017 do Sở KH và ĐT TP HCM cấp</p>
+                <p>Hotline: 0385593358</p>
+                <p>Email: icdayroi@gmail.com</p>
+                <p>Địa chỉ: 04 Đường số 7, Khu phố 3, P. Linh Trung, Q. Thủ Đức, Tp. HCM</p>
+                <p>Người đại diện theo pháp luật: Cao Thị Ngọc Nhung</p>
+            </div>
+            <div class="privacy">
+                <p id='p2'>CHÍNH SÁCH MUA HÀNG</p>
+                <p><a href="">Chính sách bảo hành, đổi trả</a></p>
+                <p><a href="">Chính sách bảo mật thông tin</a></p>
+                <p><a href="">Chính sách giao nhận và thanh toán</a></p>
+                <p><a href="">Đăng ký thành viên</a></p>
+            </div>
+            <div class="fb-page fanpage" data-href="https://www.facebook.com/icdayroi/" data-tabs="timeline" data-width="400" data-height="300" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/icdayroi/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/icdayroi/">IC ĐÂY RỒI - Thế giới linh kiện điện tử</a></blockquote></div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="payment">
+                <h3>HỖ TRỢ THANH TOÁN</h3>
+                <div class="payment-method">
+                    <img src="./assets/payment-1.jpg" alt="">
+                    <img src="./assets/payment-2.jpg" alt="">
+                    <img src="./assets/payment-3.jpg" alt="">
+                    <img src="./assets/payment-4.jpg" alt="">
+                    <img src="./assets/payment-5.jpg" alt="">
+                </div>
+                <h3>CỬA HÀNG IC ĐÂY RỒI</h3>
+                <p>Ngân hàng Vietinbank chi nhánh Bình Thới, TP.HCM - Tên: Bùi Xuân Quang - STK: 105 002 822 030</p>
+                <p>Ngân hàng VietcomBank chi nhánh Thủ Đức, TP.HCM - Tên: Cao Thị Ngọc Nhung - STK: 0381 000 516 975</p>
+            </div>
+            <div class="legality">
+                <div class="question">
+                    <div class="question-content">
+                        <h3>GIẢI ĐÁP THẮC MẮC</h3>
+                        <div class="question-info">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <div class="support">
+                                <p>Tư vấn miễn phí (24/7)</p>
+                                <p id='number'>(028) 62700104</p>
+                            </div>
+
+                            <div class="report">
+                                <p>Góp ý, phản ánh (8h00 - 20h00)</p>
+                                <p id='number'>038 559 3358</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirmed">
+                    <div class="shop-address">
+                        <p>Địa chỉ: 4 Đường số 7, P. Linh Trung, Q. Thủ Đức, TP.HCM (Cạnh số nhà 113 đường Hoàng Diệu 2)
+                        </p>
+                        <p>Điện thoại: (028) 62700104 - 038 559 3358 - Email: icdayroi@gmail.com</p>
+                    </div>
+                    <div class="confirmed-logo">
+                        <img src="./assets/confirmed.png" alt="">
                     </div>
                 </div>
             </div>

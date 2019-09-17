@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 1px  #8c8c8c solid;
+    background-color: white;
 
 }
 .empty-trick {
@@ -29,7 +30,8 @@
     display: flex;
     height: 70px;
     justify-content: space-between;
-    margin: 10px;
+    padding: 10px;
+    background-color: white;
 }
 .logo {
     height: 100%;
@@ -48,14 +50,15 @@
 
 }
 .search {
-    height: 48px;
+    height: 44px;
     width: 400px;
     border-color: #2790f2;
     border-width: 1px;
+    padding-left: 10px;
 }
 .search-button {
     background-color: #2790f2;
-    height: 50px;
+    height: 46px;
     width: 100px;
     display: flex;
     justify-content: center;
@@ -91,7 +94,6 @@
     display: flex;
     justify-content: space-between;
     color: white;
-    border: 1px black solid;
     position: relative;
 }   
 .menu .cover-menu {
@@ -140,6 +142,11 @@
     height: 350px;
     width: 1140px;
 } 
+
+body {
+    background-color: #F5F5F5;
+}
+
 .product-info { 
     display: flex;
     justify-content: center;
@@ -163,6 +170,11 @@
     border-bottom: 1px #2790f2 dashed;
     padding: 13px 10px 12px 10px;  
     font-size: 15px; 
+    background-color: white;
+}
+#last-el-menu {
+    border-bottom: 1px #2790f2 solid;
+    margin-bottom: 15px;
 }
 .header-container {
     width: 100%;
@@ -200,10 +212,69 @@
 .fa-angle-down {
     color: #8c8c8c;
 }
+.menu-col .online-support-container {
+    width: 100%;
+    background-color: white;
+}
+.sup-field {
+    font-weight: bold;
+}
+.menu-col .online-support-container .online-support-info {
+    display: flex;  
+    margin-left: 15px;
+    margin-right: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.menu-col .online-support-container .online-support-info span {
+    font-weight: bold;
+}
+.menu-col .online-support-container .online-support-info i {
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #EA4242;
+}
+
+
+.news {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    background-color: white;
+}
+.news img {
+    margin: 5px;
+}
+.news a {
+    text-decoration: none;
+    color: black;
+}
+#title-news {
+    margin: 5px;
+    font-weight: bold;
+}
+.news .poster-info {
+    display: flex;
+    margin: 5px;
+    color: #919191;
+}
+.news .poster-info .user {
+    margin-right: 15px;
+}
+.news .post-content {
+    margin: 5px;
+    text-align: justify;
+    font-size: 13px;
+    color: #919191;
+}
+.news .post-content a {
+    color: #4FA4F4;
+    font-weight: 500;
+}
 
 .product-col {
     width: 73%;
-    background-color: #757575;
 }
 .text-empty {
     width: 20px;
@@ -244,29 +315,40 @@
     justify-content: flex-start;
     margin-top: 2px;
     margin-bottom: 2px;
-
+    position: relative;
 }
 .product img {
     height: 60%;
     width: 95%;
+    position: absolute;
+    left: 0; top: 0;
 }
 .product .product-name {
-    font-size: 16px;
+    text-align: center;
+    font-size: 15px;
     color: #636469;
     margin-bottom: 5px;
+    position: absolute;
+    left: 0px; top: 220px;
 }
 .product .reduced-price {
     font-weight: bold;
     color: #00b4cc;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 5px;
+    position: absolute;
+    left: 73px; top: 268px;
+    text-align: center;
 }
 .product .original-price {
+    text-align: center;
     color:#a3a3a3;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     text-decoration: line-through;
     margin-bottom: 5px;
+    position: absolute;
+    left: 75px; top: 288px;
 }
 .product .buy-button {
     display: flex;
@@ -278,6 +360,8 @@
     color: #00b4cc;
     font-size: 15px;
     transition: 0.4s;
+    position: absolute;
+    left: 19px; bottom: 10px;
 }
 .product .buy-button:hover {
     background-color: #00b4cc;
@@ -285,4 +369,139 @@
 }
 .product .buy-button i {
     margin-right: 8px;
+}
+
+.product-footer {
+    width: 99.2%;
+    height: 54px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.product-footer .btn-seemore {
+    height: 30px;
+    width: 135px;
+    background-color: #2790f2;
+    border-radius: 10px;    
+    margin-right: 10px; 
+    text-align: center;
+    color: white;
+    text-transform: none;
+    font-size: 14px;    
+    font-weight: 400;
+    line-height: 27px;
+    cursor: pointer;
+}
+.shop-info { 
+    display: flex;
+    justify-content: center;
+}
+.info-container {
+    width: 1140px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.info-container .address {
+
+}
+#p1, #p2 {
+    margin-bottom: 10px;
+}
+#p2 {
+    font-weight: 500;
+}
+.info-container .privacy {}
+.info-container .privacy a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.info-container .privacy a:hover {
+    color: #337ab7;
+} 
+.info-container .fanpage {
+    margin-bottom: 30px; 
+}
+.footer { 
+    display: flex;
+    justify-content: center;
+}
+.footer-container {
+    width: 1140px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.footer-container .payment {
+    width: 38%;
+}
+.payment-method {
+    margin-left: 5px;
+}
+.footer-container .payment img{
+    margin: 5px 0;
+}
+.footer-container .payment p {
+    color: #999;
+    font-size: 14px;
+    padding-left: 5px;
+    margin: 10px 0;
+    text-align: justify;
+}
+.footer-container .legality {
+    width: 57%;
+}
+.question {
+    display: flex;
+    justify-content: center;
+}
+.question-info {
+    display: flex;
+}
+.question-info i {
+    margin: 20px 10px;
+    font-size: 18px;
+    color: #D91818;
+}
+.question-info .support {
+    margin: 10px;
+    border-right: 1px #999 solid; 
+    padding-right: 20px; 
+    font-size: 14px;
+    color: #999;
+}
+.question-info .report {
+    margin: 10px;
+    font-size: 14px;
+    color: #999;
+}
+#number {
+    font-weight: bold;
+    color: #D91818;
+}
+.confirmed {
+    display: flex;
+    margin-top: 5px;
+}
+.shop-address {
+    width: 50%;
+    color: #999;
+}
+.shop-address p {
+    margin: 10px 0; 
+}
+.confirmed-logo {
+    width: 50%;
+}
+.confirmed-logo img {
+    height: 60px;
+    width: 170px;   
+    margin: 20px;
 }

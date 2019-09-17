@@ -1,0 +1,25 @@
+defaultItem = {left, top}
+rightitem = {left, top, right}
+const lengthItem = items.length //15
+const modItem = lengthItem % 4 === 0 ? 4 : lengthItem % 4 // 3 14, 13 ,12
+
+
+
+for (x = 0, c = length; x < c; x ++) {
+    0
+    let breakFlag = 
+    //0, 1, 2 mod
+    if (x % 3) {
+        left top right  
+    } else if (x === lengthItem -1) {
+        top left right bottom
+    }
+     else if (x >= lengthItem - modItem)
+    const newModItem = modItem--
+        if ( newModItem >= 0 && x ===lengthItem - 1 -newModItem)  {
+            top left bottom
+        }
+    
+} else {
+    top left 
+}
